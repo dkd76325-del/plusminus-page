@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* alin-items: center; */
+    justify-content: center;
+    background-color: rgb(159, 75, 89);
+}
+
+.table-box{
+    width: 100%;
+    /* height: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(148, 75, 159);
+    
+}
+table{
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;  
+}
+td,th{
+    border: 2px solid black;
+    padding: 10px;
+}
