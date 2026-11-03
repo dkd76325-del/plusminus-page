@@ -27,7 +27,7 @@ import { useState } from 'react';
             ))}
          </div>
          <div className="submit-button">
-            <button onClick={()=>{names(playername); setIsDisabled(true);setlock(false)}}>Submit names</button>
+            <button onClick={()=>{names(playername); setIsDisabled(playername.length === 4 );setlock(false)}}>Submit names</button>
          </div>
          <div className="run-inputs">
              {players.map((player, index) => (
@@ -44,7 +44,7 @@ import { useState } from 'react';
             ))}
          </div>
          <div className="submit-button">
-            <button onClick={()=>{runs(playersrun); setlock(true);}}>Lock runs</button>
+            <button onClick={()=>{runs(playersrun); setlock(playersrun.length === 4)}}>Lock runs</button>
          </div>
         </div>
     )
